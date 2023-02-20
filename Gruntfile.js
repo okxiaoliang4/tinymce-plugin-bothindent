@@ -79,11 +79,11 @@ module.exports = (grunt) => {
         },
         // scratchPluginMinPath is used twice on purpose, all outputs will be minified for premium plugins
         files: {
-          'dist/tinymce-plugin-bothindent/plugin.js': [
+          'dist/bothindent/plugin.js': [
             'src/text/license-header.js',
             scratchPluginMinPath
           ],
-          'dist/tinymce-plugin-bothindent/plugin.min.js': [
+          'dist/bothindent/plugin.min.js': [
             'src/text/license-header.js',
             scratchPluginMinPath
           ]
@@ -94,7 +94,7 @@ module.exports = (grunt) => {
     copy: {
       css: {
         files: [
-          { src: [ 'CHANGELOG.txt', 'LICENSE.txt' ], dest: 'dist/tinymce-plugin-bothindent', expand: true }
+          { src: [ 'CHANGELOG.txt', 'LICENSE.txt' ], dest: 'dist/bothindent', expand: true }
         ]
       }
     },
@@ -148,7 +148,7 @@ module.exports = (grunt) => {
   grunt.loadNpmTasks('@ephox/swag');
 
   grunt.registerTask('version', 'Creates a version file', () => {
-    grunt.file.write('dist/tinymce-plugin-bothindent/version.txt', BUILD_VERSION);
+    grunt.file.write('dist/bothindent/version.txt', BUILD_VERSION);
   });
 
   grunt.registerTask('default', [
