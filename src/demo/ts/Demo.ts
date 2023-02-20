@@ -8,6 +8,6 @@ Plugin();
 
 tinymce.init({
   selector: 'textarea.tinymce',
-  plugins: 'code tinymce-plugin-bothindent',
-  toolbar: 'tinymce-plugin-bothindent'
+  plugins: 'code bothindent',
+  toolbar: 'bothindent'
 });
