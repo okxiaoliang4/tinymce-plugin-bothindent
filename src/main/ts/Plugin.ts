@@ -22,7 +22,7 @@ const setup = (editor: Editor): void => {
   });
 
   editor.ui.registry.addMenuButton('bothindent', {
-    text: '两端对齐',
+    text: '两端缩进',
     fetch(callback) {
       callback(bothindent.split(' ').map((item) => {
         return {
